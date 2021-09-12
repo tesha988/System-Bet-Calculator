@@ -1,3 +1,3 @@
 # System Bet Calculator
 
-Finished creating HTML elements
+Edited html, added basic styling and some js funcionality.

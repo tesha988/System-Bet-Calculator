@@ -1,0 +1,18 @@
+body {
+    text-align: center;
+}
+  
+#container {
+    margin: 25px;
+}
+  
+  
+#top {
+    margin: 25px;
+}
+  
+input {
+    margin: 2px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
