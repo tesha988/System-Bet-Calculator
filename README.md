@@ -1,3 +1,3 @@
-# Syestem Bet Calculator
+# System Bet Calculator
 
 Finished creating HTML elements
