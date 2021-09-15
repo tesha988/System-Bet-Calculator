@@ -1,241 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>System Bet Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header"><h1>System bets calculator</h1></header>
-    
+
     <div id="top">
-    <label for="dropdown">System</label>
-    <select name="dropdown" id="dropdown">
-      <option value="2">1 from 2</option>
-      <option value="3">1 from 3</option>
-      <option value="4">1 from 4</option>
-      <option value="5">1 from 5</option>
-      <option value="6">1 from 6</option>
-      <option value="7">1 from 7</option>
-      <option value="8">1 from 8</option>
-      <option value="9">1 from 9</option>
-      <option value="10">1 from 10</option>
-      <option value="11">1 from 11</option>
-      <option value="12">1 from 12</option>
-      <option value="13">1 from 13</option>
-      <option value="14">1 rom 14</option>
-      <option value="15">1 from 15</option>
-      <option value="16">1 from 16</option>
+      <label for="dropdown">System</label>
+      <select name="dropdown" id="system">
+        <option value="2">1 from 2</option>
+        <option value="3">1 from 3</option>
+        <option value="4">1 from 4</option>
+        <option value="5">1 from 5</option>
+        <option value="6">1 from 6</option>
+        <option value="7">1 from 7</option>
+        <option value="8">1 from 8</option>
+        <option value="9">1 from 9</option>
+        <option value="10">1 from 10</option>
+        <option value="11">1 from 11</option>
+        <option value="12">1 from 12</option>
+        <option value="13">1 from 13</option>
+        <option value="14">1 rom 14</option>
+        <option value="15">1 from 15</option>
+        <option value="16">1 from 16</option>
 
-      <option value="3">2 from 3</option>
-      <option value="6">2 from 4</option>
-      <option value="10">2 from 5</option>
-      <option value="15">2 from 6</option>
-      <option value="21">2 from 7</option>
-      <option value="28">2 from 8</option>
-      <option value="36">2 from 9</option>
-      <option value="45">2 from 10</option>
-      <option value="55">2 from 11</option>
-      <option value="66">2 from 12</option>
-      <option value="78">2 from 13</option>
-      <option value="91">2 rom 14</option>
-      <option value="105">2 from 15</option>
-      <option value="120">2 from 16</option>
+        <option value="3">2 from 3</option>
+        <option value="6">2 from 4</option>
+        <option value="10">2 from 5</option>
+        <option value="15">2 from 6</option>
+        <option value="21">2 from 7</option>
+        <option value="28">2 from 8</option>
+        <option value="36">2 from 9</option>
+        <option value="45">2 from 10</option>
+        <option value="55">2 from 11</option>
+        <option value="66">2 from 12</option>
+        <option value="78">2 from 13</option>
+        <option value="91">2 rom 14</option>
+        <option value="105">2 from 15</option>
+        <option value="120">2 from 16</option>
 
-      
-      <option value="4">3 from 4</option>
-      <option value="10">3 from 5</option>
-      <option value="20">3 from 6</option>
-      <option value="35">3 from 7</option>
-      <option value="56">3 from 8</option>
-      <option value="84">3 from 9</option>
-      <option value="120">3 from 10</option>
-      <option value="165">3 from 11</option>
-      <option value="220">3 from 12</option>
-      <option value="286">3 from 13</option>
-      <option value="364">3 rom 14</option>
-      <option value="455">3 from 15</option>
-      <option value="560">3 from 16</option>
+        <option value="4">3 from 4</option>
+        <option value="10">3 from 5</option>
+        <option value="20">3 from 6</option>
+        <option value="35">3 from 7</option>
+        <option value="56">3 from 8</option>
+        <option value="84">3 from 9</option>
+        <option value="120">3 from 10</option>
+        <option value="165">3 from 11</option>
+        <option value="220">3 from 12</option>
+        <option value="286">3 from 13</option>
+        <option value="364">3 rom 14</option>
+        <option value="455">3 from 15</option>
+        <option value="560">3 from 16</option>
 
-      <option value="5">4 from 5</option>
-      <option value="15">4 from 6</option>
-      <option value="35">4 from 7</option>
-      <option value="70">4 from 8</option>
-      <option value="126">4 from 9</option>
-      <option value="210">4 from 10</option>
-      <option value="330">4 from 11</option>
-      <option value="495">4 from 12</option>
-      <option value="715">4 from 13</option>
-      <option value="1001">4 rom 14</option>
-      <option value="1365">4 from 15</option>
-      <option value="1820">4 from 16</option>
+        <option value="5">4 from 5</option>
+        <option value="15">4 from 6</option>
+        <option value="35">4 from 7</option>
+        <option value="70">4 from 8</option>
+        <option value="126">4 from 9</option>
+        <option value="210">4 from 10</option>
+        <option value="330">4 from 11</option>
+        <option value="495">4 from 12</option>
+        <option value="715">4 from 13</option>
+        <option value="1001">4 rom 14</option>
+        <option value="1365">4 from 15</option>
+        <option value="1820">4 from 16</option>
 
-      <option value="6">5 from 6</option>
-      <option value="21">5 from 7</option>
-      <option value="56">5 from 8</option>
-      <option value="126">5 from 9</option>
-      <option value="252">5 from 10</option>
-      <option value="462">5 from 11</option>
-      <option value="792">5 from 12</option>
-      <option value="1287">5 from 13</option>
-      <option value="2002">5 rom 14</option>
-      <option value="3003">5 from 15</option>
-      <option value="4368">5 from 16</option>
+        <option value="6">5 from 6</option>
+        <option value="21">5 from 7</option>
+        <option value="56">5 from 8</option>
+        <option value="126">5 from 9</option>
+        <option value="252">5 from 10</option>
+        <option value="462">5 from 11</option>
+        <option value="792">5 from 12</option>
+        <option value="1287">5 from 13</option>
+        <option value="2002">5 rom 14</option>
+        <option value="3003">5 from 15</option>
+        <option value="4368">5 from 16</option>
 
-      
-      <option value="7">6 from 7</option>
-      <option value="28">6 from 8</option>
-      <option value="84">6 from 9</option>
-      <option value="210">6 from 10</option>
-      <option value="462">6 from 11</option>
-      <option value="924">6 from 12</option>
-      <option value="1716">6 from 13</option>
-      <option value="3003">6 rom 14</option>
-      <option value="5005">6 from 15</option>
-      <option value="8008">6 from 16</option>
-    
-      <option value="8">7 from 8</option>
-      <option value="36">7 from 9</option>
-      <option value="120">7 from 10</option>
-      <option value="330">7 from 11</option>
-      <option value="792">7 from 12</option>
-      <option value="1716">7 from 13</option>
-      <option value="3432">7 rom 14</option>
-      <option value="6435">7 from 15</option>
-      <option value="11440">7 from 16</option>
+        <option value="7">6 from 7</option>
+        <option value="28">6 from 8</option>
+        <option value="84">6 from 9</option>
+        <option value="210">6 from 10</option>
+        <option value="462">6 from 11</option>
+        <option value="924">6 from 12</option>
+        <option value="1716">6 from 13</option>
+        <option value="3003">6 rom 14</option>
+        <option value="5005">6 from 15</option>
+        <option value="8008">6 from 16</option>
 
-      
-      <option value="9">8 from 9</option>
-      <option value="">8 from 10</option>
-      <option value="">8 from 11</option>
-      <option value="">8 from 12</option>
-      <option value="">8 from 13</option>
-      <option value="">8 rom 14</option>
-      <option value="">8 from 15</option>
-      <option value="">8 from 16</option>
+        <option value="8">7 from 8</option>
+        <option value="36">7 from 9</option>
+        <option value="120">7 from 10</option>
+        <option value="330">7 from 11</option>
+        <option value="792">7 from 12</option>
+        <option value="1716">7 from 13</option>
+        <option value="3432">7 rom 14</option>
+        <option value="6435">7 from 15</option>
+        <option value="11440">7 from 16</option>
 
-      
-      <option value="10">9 from 10</option>
-      <option value="">9 from 11</option>
-      <option value="">9 from 12</option>
-      <option value="">9 from 13</option>
-      <option value="">9 rom 14</option>
-      <option value="">9 from 15</option>
-      <option value="">9 from 16</option>
+        <option value="9">8 from 9</option>
+        <option value="45">8 from 10</option>
+        <option value="165">8 from 11</option>
+        <option value="495">8 from 12</option>
+        <option value="1287">8 from 13</option>
+        <option value="3003">8 rom 14</option>
+        <option value="6435">8 from 15</option>
+        <option value="12870">8 from 16</option>
 
-      <option value="11">10 from 11</option>
-      <option value="">10 from 12</option>
-      <option value="">10 from 13</option>
-      <option value="">10 rom 14</option>
-      <option value="">10 from 15</option>
-      <option value="">10 from 16</option>
+        <option value="10">9 from 10</option>
+        <option value="55">9 from 11</option>
+        <option value="220">9 from 12</option>
+        <option value="715">9 from 13</option>
+        <option value="2002">9 rom 14</option>
+        <option value="5005">9 from 15</option>
+        <option value="11440">9 from 16</option>
 
-      
-      <option value="12">11 from 12</option>
-      <option value="">11 from 13</option>
-      <option value="">11 rom 14</option>
-      <option value="">11 from 15</option>
-      <option value="">11 from 16</option>
+        <option value="11">10 from 11</option>
+        <option value="66">10 from 12</option>
+        <option value="286">10 from 13</option>
+        <option value="1001">10 rom 14</option>
+        <option value="3003">10 from 15</option>
+        <option value="8008">10 from 16</option>
 
-      <option value="13">12 from 13</option>
-      <option value="">12 rom 14</option>
-      <option value="">12 from 15</option>
-      <option value="">12 from 16</option>
+        <option value="12">11 from 12</option>
+        <option value="78">11 from 13</option>
+        <option value="364">11 rom 14</option>
+        <option value="1365">11 from 15</option>
+        <option value="4368">11 from 16</option>
 
-      
-      <option value="14">13 rom 14</option>
-      <option value="">13 from 15</option>
-      <option value="">13 from 16</option>
+        <option value="13">12 from 13</option>
+        <option value="91">12 rom 14</option>
+        <option value="455">12 from 15</option>
+        <option value="1820">12 from 16</option>
 
-      <option value="15">14 from 15</option>
-      <option value="">14 from 16</option>
+        <option value="14">13 rom 14</option>
+        <option value="105">13 from 15</option>
+        <option value="560">13 from 16</option>
 
-      <option value="16">15 from 16</option>
-    </select><br>
+        <option value="15">14 from 15</option>
+        <option value="120">14 from 16</option>
 
-    <label for="dropdown">Banker Bets</label>
-    <select name="dropdown" id="dropdown">
-      <option value="0">0</option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-      <option value="6">6</option>
-      <option value="7">7</option>
-      <option value="8">8</option>
-      <option value="9">9</option>
-      <option value="10">10</option>
-      <option value="11">11</option>
-      <option value="12">12</option>
-      <option value="13">13</option>
-      <option value="14">14</option>
-      <option value="15">15</option>
-      <option value="16">16</option>
-    </select><br>
+        <option value="16">15 from 16</option></select
+      ><br />
+
+      <label for="dropdown">Banker Bets</label>
+      <select name="dropdown" id="dropdown">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option></select
+      ><br />
     </div>
 
     <div id="container">
-    <form name="form" id="form">
-      <label for="stake">Stake:</label><br>
-      <input type="number" size="2" name="stake" id="stake"><br><hr>
+      <form name="form" id="form">
+        <label for="stake">Stake:</label><br />
+        <input type="number" size="2" name="stake" id="stake" /><br />
+        <hr />
 
-      <input type="number" class="odds" step="any" id="oddOne" />
-      <input type="checkbox" class="choice" /><br>
-   
-      <input type="number" class="odds" step="any" id="oddTwo" />
-      <input type="checkbox" class="choice" /><br>
-      
-      <input type="number" class="odds" step="any" id="oddThree" />
-      <input type="checkbox" class="choice" /><br>
-   
-      <input type="number" class="odds" step="any" id="oddFour" />
-      <input type="checkbox" class="choice" /><br>
- 
-      <input type="number" class="odds" step="any" id="oddFive" />
-      <input type="checkbox" class="choice" /><br>
-     
-      <input type="number" class="odds" step="any" id="oddSix" />
-      <input type="checkbox" class="choice" /><br>
-  
-      <input type="number" class="odds" step="any" id="oddSeven" />
-      <input type="checkbox" class="choice" /><br>
+        <input type="number" class="odds" step="any" id="oddOne" />
+        <input type="checkbox" class="choice" /><br />
 
-      <input type="number" class="odds" step="any" id="oddEight" />
-      <input type="checkbox" class="choice" /><br>
-  
-      <input type="number" class="odds" step="any" id="oddNine" />
-      <input type="checkbox" class="choice" /><br>
-      
-      <input type="number" class="odds" step="any" id="oddTen" />
-      <input type="checkbox" class="choice" /><br>
-    
-      <input type="number" class="odds" step="any" id="oddEleven" />
-      <input type="checkbox" class="choice" /><br>
-    
-      <input type="number" class="odds" step="any" id="oddTwelve" />
-      <input type="checkbox" class="choice" /><br>
-      
-      <input type="number" class="odds" step="any" id="oddThirteen" />
-      <input type="checkbox" class="choice" /><br>
-    
-      <input type="number" class="odds" step="any" id="oddFourteen" />
-      <input type="checkbox" class="choice" /><br>
+        <input type="number" class="odds" step="any" id="oddTwo" />
+        <input type="checkbox" class="choice" /><br />
 
-      <input type="number" class="odds" step="any" id="oddFifteen" />
-      <input type="checkbox" class="choice" /><br>
-   
-      <input type="number" class="odds" step="any" id="oddSixteen" />
-      <input type="checkbox" class="choice" /><br>
- 
-      <input type="button" id="btn" value="Calculate">
+        <input type="number" class="odds" step="any" id="oddThree" />
+        <input type="checkbox" class="choice" /><br />
 
-      <label for="total">Winning</label>
-      <input type="text" size="2" name="total" class="total" value="0" />
-    </form>
+        <input type="number" class="odds" step="any" id="oddFour" />
+        <input type="checkbox" class="choice" /><br />
+
+        <input type="number" class="odds" step="any" id="oddFive" />
+        <input type="checkbox" class="choice" /><br />
+
+        <input type="number" class="odds" step="any" id="oddSix" />
+        <input type="checkbox" class="choice" /><br />
+
+        <input type="number" class="odds" step="any" id="oddSeven" />
+        <input type="checkbox" class="choice" /><br />
+
+        <input type="number" class="odds" step="any" id="oddEight" />
+        <input type="checkbox" class="choice" /><br />
+
+        <input type="number" class="odds" step="any" id="oddNine" />
+        <input type="checkbox" class="choice" /><br />
+
+        <input type="number" class="odds" step="any" id="oddTen" />
+        <input type="checkbox" class="choice" /><br />
+
+        <input type="number" class="odds" step="any" id="oddEleven" />
+        <input type="checkbox" class="choice" /><br />
+
+        <input type="number" class="odds" step="any" id="oddTwelve" />
+        <input type="checkbox" class="choice" /><br />
+
+        <input type="number" class="odds" step="any" id="oddThirteen" />
+        <input type="checkbox" class="choice" /><br />
+
+        <input type="number" class="odds" step="any" id="oddFourteen" />
+        <input type="checkbox" class="choice" /><br />
+
+        <input type="number" class="odds" step="any" id="oddFifteen" />
+        <input type="checkbox" class="choice" /><br />
+
+        <input type="number" class="odds" step="any" id="oddSixteen" />
+        <input type="checkbox" class="choice" /><br />
+
+        <input type="button" id="btn" value="Calculate" />
+
+        <label for="total">Winning</label>
+        <input
+          type="number"
+          size="2"
+          name="total"
+          class="total"
+          value="0"
+          step="any"
+        />
+      </form>
     </div>
-</body>
+  </body>
 </html>
