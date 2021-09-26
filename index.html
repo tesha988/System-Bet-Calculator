@@ -9,11 +9,14 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <header class="header"><h1>System bets calculator</h1></header>
-
-    <div id="top">
-      <label for="dropdown">System</label>
-      <select name="dropdown" id="system">
+    <main>
+      
+      
+      <div id="top">
+        <header class="header"><h1>System bets calculator</h1></header>
+        <div id="system-selection"> 
+        <label for="dropdown" id="system-label">System:</label>
+        <select name="dropdown" id="system" onchange="addOddsInput()">
         <option value="2">1 from 2</option>
         <option value="3">1 from 3</option>
         <option value="4">1 from 4</option>
@@ -47,7 +50,7 @@
 
         <option value="4">3 from 4</option>
         <option value="10">3 from 5</option>
-        <option value="20">3 from 6</option>
+        <option value="20" selected>3 from 6</option>
         <option value="35">3 from 7</option>
         <option value="56">3 from 8</option>
         <option value="84">3 from 9</option>
@@ -148,10 +151,11 @@
         <option value="120">14 from 16</option>
 
         <option value="16">15 from 16</option></select
-      ><br />
-
-      <label for="dropdown">Banker Bets</label>
-      <select name="dropdown" id="dropdown">
+      ><br /></div>
+      
+    <div id="banker-bets-selection"> 
+      <label for="dropdown" id="banker-bets-label">Banker Bets:</label>
+      <select name="dropdown" id="banker-bets" onchange="createBankerBets()">
         <option value="0">0</option>
         <option value="1">1</option>
         <option value="2">2</option>
@@ -171,73 +175,94 @@
         <option value="16">16</option></select
       ><br />
     </div>
+        
+       
+      </div>
 
-    <div id="container">
-      <form name="form" id="form">
-        <label for="stake">Stake:</label><br />
-        <input type="number" size="2" name="stake" id="stake" /><br />
-        <hr />
+      <div id="container">
+        <form name="form" id="form">
+        
+          <input type="number" size="2" step="any" id="stake" placeholder="Enter Stake..." /><br />
 
-        <input type="number" class="odds" step="any" id="oddOne" />
-        <input type="checkbox" class="choice" /><br />
+          <input
+            type="number"
+            class="odds"
+            step="any"
+            id="oddOne"
+            placeholder="Odds 1..."
+          />
+          <label for="checkbox"
+            >Correct
+            <input type="checkbox" name="checkbox" class="choice" /></label
+          ><br />
 
-        <input type="number" class="odds" step="any" id="oddTwo" />
-        <input type="checkbox" class="choice" /><br />
+          <input
+            type="number"
+            class="odds"
+            step="any"
+            id="oddTwo"
+            placeholder="Odds 2..."
+          />
+          <label for="checkbox"
+            >Correct
+            <input type="checkbox" name="checkbox" class="choice" /></label
+          ><br />
 
-        <input type="number" class="odds" step="any" id="oddThree" />
-        <input type="checkbox" class="choice" /><br />
+          <input
+            type="number"
+            class="odds"
+            step="any"
+            id="oddThree"
+            placeholder="Odds 3..."
+          />
+          <label for="checkbox"
+            >Correct
+            <input type="checkbox" name="checkbox" class="choice" /></label
+          ><br />
 
-        <input type="number" class="odds" step="any" id="oddFour" />
-        <input type="checkbox" class="choice" /><br />
+          <input
+            type="number"
+            class="odds"
+            step="any"
+            id="oddFour"
+            placeholder="Odds 4..."
+          />
+          <label for="checkbox"
+            >Correct
+            <input type="checkbox" name="checkbox" class="choice" /></label
+          ><br />
 
-        <input type="number" class="odds" step="any" id="oddFive" />
-        <input type="checkbox" class="choice" /><br />
+          <input
+            type="number"
+            class="odds"
+            step="any"
+            id="oddFive"
+            placeholder="Odds 5..."
+          />
+          <label for="checkbox"
+            >Correct
+            <input type="checkbox" name="checkbox" class="choice" /></label
+          ><br />
 
-        <input type="number" class="odds" step="any" id="oddSix" />
-        <input type="checkbox" class="choice" /><br />
-
-        <input type="number" class="odds" step="any" id="oddSeven" />
-        <input type="checkbox" class="choice" /><br />
-
-        <input type="number" class="odds" step="any" id="oddEight" />
-        <input type="checkbox" class="choice" /><br />
-
-        <input type="number" class="odds" step="any" id="oddNine" />
-        <input type="checkbox" class="choice" /><br />
-
-        <input type="number" class="odds" step="any" id="oddTen" />
-        <input type="checkbox" class="choice" /><br />
-
-        <input type="number" class="odds" step="any" id="oddEleven" />
-        <input type="checkbox" class="choice" /><br />
-
-        <input type="number" class="odds" step="any" id="oddTwelve" />
-        <input type="checkbox" class="choice" /><br />
-
-        <input type="number" class="odds" step="any" id="oddThirteen" />
-        <input type="checkbox" class="choice" /><br />
-
-        <input type="number" class="odds" step="any" id="oddFourteen" />
-        <input type="checkbox" class="choice" /><br />
-
-        <input type="number" class="odds" step="any" id="oddFifteen" />
-        <input type="checkbox" class="choice" /><br />
-
-        <input type="number" class="odds" step="any" id="oddSixteen" />
-        <input type="checkbox" class="choice" /><br />
-
+          <input
+            type="number"
+            class="odds"
+            step="any"
+            id="oddSix"
+            placeholder="Odds 6..."
+          />
+          <label for="checkbox"
+            >Correct
+            <input type="checkbox" name="checkbox" class="choice" /></label
+          ><br /> 
+        </form>
+        <div id="banker"></div>
         <input type="button" id="btn" value="Calculate" />
-
-        <label for="total">Winning</label>
-        <input
-          type="number"
-          size="2"
-          name="total"
-          class="total"
-          value="0"
-          step="any"
-        />
-      </form>
-    </div>
+        <div id="bottom">
+          <label for="total" id="winning">Winning:</label>
+          <div name="total" class="total" value="0"/>0</div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

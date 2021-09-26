@@ -1,18 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 body {
-    text-align: center;
+  min-height: 100vh;
+  text-align: center;
+  width: 560px;
+  margin: auto;
+  background: #3f88c5;
+  font-family: "Roboto", sans-serif;
 }
-  
+
+.header {
+  background: #3f88c5;
+  width: 25rem;
+  margin: 0 auto 0 auto;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 0.1rem;
+  color: white;
+  margin-bottom: 2rem;
+  box-shadow: 4px 4px 10px rgb(0 0 0 / 50%);
+}
+
+main {
+  margin-top: 1.5rem;
+}
+
+#top,
 #container {
-    margin: 25px;
+  background: #032b43;
+  margin: 30px;
+  box-shadow: 20px 10px 50px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  overflow: hidden;
+  backdrop-filter: blur(5px);
 }
-  
-  
+
+#system-selection {
+  margin: 0.9rem auto;
+  background: white;
+  width: 17.1rem;
+  padding: 0px 0.4rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 1px 5px rgb(0 0 0 / 50%);
+}
+
+#banker-bets-selection {
+  margin: 0.9rem auto;
+  text-align: left;
+  padding: 0 0.8rem;
+  background: white;
+  width: 16.1rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 1px 5px rgb(0 0 0 / 50%);
+}
+
+#system-label {
+  text-align: left;
+  display: flex;
+  padding-left: 0.4rem;
+  font-size: larger;
+}
+
+#system {
+  width: 7.1rem;
+  margin-right: -6.2rem;
+  padding-left: 0.4rem;
+  padding-right: -1.5rem;
+  font-size: larger;
+  background: #3f88c5;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  color: white;
+  border: 0;
+  display: flex;
+  align-content: flex-end;
+}
+
+#banker-bets {
+  width: 7.1rem;
+  margin-right: -4.1rem;
+  padding-left: 2.8rem;
+  font-size: larger;
+  background: #3f88c5;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  color: white;
+  border: 0;
+  display: flex;
+  align-content: flex-end;
+}
+
+#banker-bets-label {
+  text-align: left;
+  display: flex;
+  font-size: larger;
+}
+
+#form {
+  margin-top: 3rem;
+}
+
+#stake {
+  height: 2rem;
+  margin-bottom: 1.6rem;
+  position: relative;
+  top: -1rem;
+  border-radius: 20px;
+  border: 0;
+  text-align: center;
+  font-size: larger;
+}
+
+.banker {
+  height: 3rem;
+  width: 14rem;
+  font-size: x-large;
+  text-align: center;
+  display: block;
+  margin: 1rem auto 1rem auto;
+  border: 0;
+  background: #ffba08;
+  border-radius: 5px;
+  box-shadow: inset -3px -3px 7px #ffffffb0,
+    inset 3px 3px 5px rgba(94, 104, 121, 0.692);
+}
 #top {
-    margin: 25px;
+  margin: 25px;
 }
-  
-input {
-    margin: 2px;
-    border: 1px solid grey;
-    border-radius: 5px;
+
+input.odds {
+  margin: 2px 2px 2px 2px;
+  border: 0;
+  font-size: x-large;
+  text-align: center;
+  width: 8rem;
+  height: 3rem;
+  background: #ffba08;
+  border-radius: 5px;
+  box-shadow: inset -3px -3px 7px #c4f5bdb0,
+    inset 3px 3px 5px rgba(115, 158, 102, 0.692);
+}
+
+input[type="checkbox"] {
+  vertical-align: middle;
+  position: relative;
+  bottom: 0.14em;
+  transform: scale(2);
+  /* background: rgba(255, 255, 255, 0.1); */
+  margin: 30px;
+  /* box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5); */
+  border-radius: 15px;
+}
+
+input.odds input::placeholder {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+::placeholder {
+  color: #032b43;
+}
+
+#form label {
+  border: 0;
+  width: 168.97px;
+  border-radius: 5px;
+  font-size: x-large;
+  padding: 12px 12px 12px 12px;
+  margin: 0;
+  background: #3f88c5;
+  color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+#form h3 {
+  height: 1.6rem;
+  color: #161623;
+  margin: -0.5rem 0;
+}
+
+/* .banker {
+  width: 14rem;
+} */
+
+#btn {
+  margin-top: 2.6rem;
+  background: #d00000;
+  border-radius: 0.75rem;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: 0.75rem 1.2rem;
+  width: auto;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+#btn:hover {
+  background-color: #374151;
+}
+
+#bottom {
+  background: #3f88c5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.9rem;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+#winning {
+  display: flex;
+  color: white;
+  font-size: x-large;
+  padding: 0.6rem 2rem;
+}
+
+.total {
+  display: flex;
+  width: 8rem;
+  background: #dde1e7;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 2rem;
+  padding: 0.6rem 2rem;
+  font-size: 2rem;
+  align-content: flex-end;
+}
+
+@media (max-width: 680px), screen and (orientation: portrait) {
+  body {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+  }
+  #top {
+    margin: auto;
+    width: 23rem;
+  }
+  #container {
+    width: 23rem;
+    margin-left: 1rem;
+  }
+  .header {
+    width: 14rem;
+  }
+  .header h1 {
+    font-size: large;
+  }
+}
+
+@media (min-width: 768px) {
+  #btn {
+    padding: 0.75rem 1.5rem;
+  }
 }
