@@ -72,15 +72,12 @@ calculateButton.addEventListener("click", function checkTotal() {
 
   for (i = 0; i < document.querySelectorAll(".choice").length; i++) {
     if (document.querySelectorAll(".choice")[i].checked) {
-      console.log(document.querySelectorAll('input[type="checkbox"]:checked'));
       let correctOdds = parseFloat(document.querySelectorAll(".odds")[i].value);
       checkedOdds.push(correctOdds);
-      console.log(parseFloat(document.querySelectorAll(".odds")[i].value));
 
       let bankerSum = 1;
       document.querySelectorAll(".banker").forEach((e) => {
         bankerSum = bankerSum * parseFloat(e.value);
-        console.log(bankerSum);
       });
 
       oddsCombinations.length = parseInt(
@@ -118,7 +115,6 @@ calculateButton.addEventListener("click", function checkTotal() {
             total.innerText = sue;
           });
 
-          console.log(oddsCombinations);
           return;
         }
         for (let i = start; i <= input.length - len; i++) {
