@@ -28,7 +28,7 @@ main {
 #top,
 #container {
   background: #032b43;
-  margin: 30px;
+  margin: 10px;
   box-shadow: 20px 10px 50px rgba(0, 0, 0, 0.3);
   border-radius: 15px;
   overflow: hidden;
@@ -110,12 +110,13 @@ select option:checked {
 }
 
 #form {
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 #stake {
   height: 2rem;
-  margin-bottom: 1.6rem;
+  margin-top: 3.3rem;
+  margin-bottom: 0.2rem;
   position: relative;
   top: -1rem;
   border-radius: 20px;
@@ -261,7 +262,8 @@ input.odds input::placeholder {
   }
   #container {
     width: 23rem;
-    margin-left: 1rem;
+    margin: 1rem auto;
+    /* margin-left: 1rem; */
   }
   .header {
     width: 14rem;

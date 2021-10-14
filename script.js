@@ -12,22 +12,34 @@ const oddsCombinations = [];
 const winning = [];
 
 function addOddsInput() {
-  let oddsCount = systemList.options[systemList.selectedIndex].innerText.slice(
-    0,
-    2
-  );
-  let systemCount = systemList.options[
-    systemList.selectedIndex
-  ].innerText.slice(
-    systemList.options[systemList.selectedIndex].innerText.length - 2
-  );
-  let placeholderIndex = 0;
-  if (parseInt(systemCount) > 6) {
-    for (let i = 0; i < parseInt(systemCount) - 6; i++) {
+  if (
+    parseInt(
+      systemList.options[systemList.selectedIndex].innerText.slice(
+        systemList.options[systemList.selectedIndex].innerText.length - 2
+      )
+    ) > document.querySelectorAll(".ods").length
+  ) {
+    let oddsCount = systemList.options[
+      systemList.selectedIndex
+    ].innerText.slice(0, 2);
+    let systemCount = systemList.options[
+      systemList.selectedIndex
+    ].innerText.slice(
+      systemList.options[systemList.selectedIndex].innerText.length - 2
+    );
+    let placeholderIndex = 0;
+
+    for (
+      let i = document.querySelectorAll(".ods").length;
+      i < parseInt(systemCount);
+      i++
+    ) {
+      let odsDiv = document.createElement("div");
+      odsDiv.setAttribute("class", "ods");
       let restOddsInput = document.createElement("input");
       restOddsInput.type = "number";
       restOddsInput.step = "any";
-      restOddsInput.placeholder = `Odds ${placeholderIndex + (i + 7)}`;
+      restOddsInput.placeholder = `Odds ${placeholderIndex + i + 1}`;
       restOddsInput.setAttribute("class", "odds");
       restOddsInput.style.margin = "0rem 0.4rem 0 0";
       let labelsCreate = document.createElement("label");
@@ -37,15 +49,41 @@ function addOddsInput() {
       checkbox.classList.add("choice");
       let brakes = document.createElement("br");
 
-      document.querySelector("#form").appendChild(restOddsInput);
-      document.querySelector("#form").appendChild(labelsCreate);
+      document.querySelector("#ods").appendChild(odsDiv);
+      document.querySelectorAll(".ods")[i].appendChild(restOddsInput);
+      document.querySelectorAll(".ods")[i].appendChild(labelsCreate);
       labelsCreate.appendChild(checkbox);
-      document.querySelector("#form").appendChild(brakes);
+      document.querySelectorAll(".ods")[i].appendChild(brakes);
     }
+
+    addOddsInput();
+  } else if (
+    parseInt(
+      systemList.options[systemList.selectedIndex].innerText.slice(
+        systemList.options[systemList.selectedIndex].innerText.length - 2
+      )
+    ) < document.querySelectorAll(".ods").length
+  ) {
+    function removeOddsInput() {
+      for (
+        let i = parseInt(
+          systemList.options[systemList.selectedIndex].innerText.slice(
+            systemList.options[systemList.selectedIndex].innerText.length - 2
+          )
+        );
+        i < document.querySelectorAll(".ods").length;
+        i++
+      ) {
+        while (document.querySelectorAll(".ods")[i].firstChild) {
+          document
+            .querySelectorAll(".ods")
+            [i].removeChild(document.querySelectorAll(".ods")[i].firstChild);
+        }
+      }
+    }
+    removeOddsInput();
   }
 }
-
-addOddsInput();
 
 // Creating banker bets input field on user select
 
