@@ -1,3 +1,3 @@
 # System Bet Calculator
 
-Done with js funcionality.
+Added function which remove odds input field depending on which system user select...
