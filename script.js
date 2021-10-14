@@ -164,3 +164,8 @@ calculateButton.addEventListener("click", function checkTotal() {
   }
   combine(checkedOdds, oddsCombinations.length, 0);
 });
+
+let resetButton = document.querySelector("#reset");
+resetButton.addEventListener("click", function () {
+  window.location.reload();
+});

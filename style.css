@@ -197,8 +197,10 @@ input.odds input::placeholder {
 
 #btn {
   margin-top: 2.6rem;
+  /* margin-left: 2rem; */
   background: #d00000;
-  border-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
   box-sizing: border-box;
   color: #ffffff;
   cursor: pointer;
@@ -219,6 +221,34 @@ input.odds input::placeholder {
 
 #btn:hover {
   background-color: #374151;
+}
+
+#reset {
+  margin-top: 2.6rem;
+  /* margin-right: 2rem; */
+  background: white;
+  border-top-left-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+  box-sizing: border-box;
+  color: rgb(68, 67, 67);
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: 0.75rem 1.2rem;
+  width: auto;
+  border: none;
+  padding: 12px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+#reset:hover {
+  background-color: #374151;
+  color: white;
 }
 
 #bottom {
