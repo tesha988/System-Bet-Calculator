@@ -149,8 +149,8 @@ calculateButton.addEventListener("click", function checkTotal() {
                 (element * parseFloat(stake.value)) /
                   parseFloat(systemList.value);
             }
-            var sue = sum.toFixed(2);
-            total.innerText = sue;
+            var totalSum = sum.toFixed(2);
+            total.innerText = totalSum;
           });
 
           return;
