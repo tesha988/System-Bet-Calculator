@@ -67,6 +67,7 @@ main {
   display: flex;
   padding-left: 0.4rem;
   font-size: larger;
+  color: #032b43;
 }
 
 #system {
@@ -107,6 +108,7 @@ select option:checked {
   text-align: left;
   display: flex;
   font-size: larger;
+  color: #032b43;
 }
 
 #form {
@@ -187,13 +189,9 @@ input.odds input::placeholder {
 
 #form h3 {
   height: 1.6rem;
-  color: #161623;
+  color: #032b43;
   margin: -0.5rem 0;
 }
-
-/* .banker {
-  width: 14rem;
-} */
 
 #btn {
   width: 10rem;
@@ -274,7 +272,19 @@ input.odds input::placeholder {
   height: 2rem;
   padding: 0.6rem 2rem;
   font-size: 2rem;
+  color: #032b43;
   align-content: flex-end;
+}
+
+/* textarea:focus,
+input:focus {
+  color: #ff0000;
+} */
+
+input,
+select,
+textarea {
+  color: #032b43;
 }
 
 @media (max-width: 680px), screen and (orientation: portrait) {
